@@ -1,0 +1,18 @@
+ROADMAP/思维导图：
+HUST人工智能与自动化学院学习路线:
+https://roadmap.sh/r/artificial-intelligence--automation-engineering
+
+赛道选择：
+https://roadmap.sh/r/rdm-1fxem
+
+BIGIDEAS：
+https://roadmap.sh/r/bigideas
+
+开源项目学习：
+https://roadmap.sh/r/rdm-vwpbf
+
+论文阅读记录:
+https://roadmap.sh/r/paper-fuxvk
+
+Automated Planning：
+https://roadmap.sh/r/automated-planning-a7laa
