@@ -44,3 +44,42 @@
         font-size: 14px;
     }
 }
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        padding: 20px 0;
+    }
+
+    .profile-image {
+        position: static;
+        margin: 0 auto 20px;
+        display: block;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    #skills ul, #interests ul {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .contact-info {
+        font-size: 0.9em;
+    }
+
+    section {
+        padding: 15px;
+    }
+}

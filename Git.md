@@ -9,7 +9,7 @@
    git commit -m "你的提交信息"
 3. 拉取远程更改并合并
    git pull origin master
-   git push -u origin master
+   git push -u origin main
 4. git show e4f8a6f29587ee24ae8907f40a44d70106b807b7:main.py
 
 ## 常用命令解释
