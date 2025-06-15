@@ -3,53 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人简历</title>
+    <title>张建的个人简历</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="assets/fonts/custom-fonts.css">
 </head>
 <body>
     <header>
-        <h1>你的名字</h1>
-        <p>你的职业</p>
+        <h1>张建</h1>
+        <p>智能系统工程师</p>
+        <div class="contact-info">
+            <p>武汉, 中国</p>
+            <p>邮箱: <a href="mailto:m202473806@hust.edu.cn">m202473806@hust.edu.cn</a></p>
+            <p>电话: +86 15237776378</p>
+        </div>
     </header>
-    <section id="about">
-        <h2>关于我</h2>
-        <p>在这里写一些关于你的个人信息和背景。</p>
+
+    <section id="status">
+        <h2>当前状态</h2>
+        <p>华中科技大学, 人工智能与自动化学院, 人工智能专业, 研一</p>
     </section>
-    <section id="experience">
-        <h2>工作经历</h2>
-        <ul>
-            <li>
-                <h3>职位名称 - 公司名称</h3>
-                <p>工作描述和成就。</p>
-            </li>
-            <li>
-                <h3>职位名称 - 公司名称</h3>
-                <p>工作描述和成就。</p>
-            </li>
-        </ul>
-    </section>
-    <section id="education">
-        <h2>教育背景</h2>
-        <ul>
-            <li>
-                <h3>学位 - 学校名称</h3>
-                <p>毕业年份</p>
-            </li>
-        </ul>
-    </section>
+
     <section id="skills">
         <h2>技能</h2>
         <ul>
-            <li>技能1</li>
-            <li>技能2</li>
-            <li>技能3</li>
+            <li>Python</li>
+            <li>C</li>
+            <li>Vue</li>
+            <li>Django</li>
+            <li>嵌入式</li>
+            <li>AIGC</li>
+            <li>SQL</li>
         </ul>
     </section>
+
+    <section id="interests">
+        <h2>兴趣爱好</h2>
+        <ul>
+            <li>电机控制</li>
+            <li>软件系统开发</li>
+            <li>AIGC</li>
+            <li>AI硬件</li>
+            <li>羽毛球</li>
+            <li>音乐</li>
+            <li>播客</li>
+        </ul>
+    </section>
+
+    <section id="summary">
+        <h2>个人简介</h2>
+        <p>华中科技大学人工智能与自动化学院本科自动化方向毕业，现为该学院人工智能方向研一硕士生。主修过大量硬件、软件、AI相关课程，具备扎实的工程实践能力、跨学科学习能力和团队领导力。立志于做出可以改变普通人生活的硬件/软件产品，对AI硬件赛道有着很大的热情。</p>
+    </section>
+
+    <section id="education">
+        <h2>教育背景</h2>
+        <div class="education-item">
+            <h3>工学硕士，智能科学与技术 - 华中科技大学</h3>
+            <p class="date">2024 - 至今</p>
+            <ul>
+                <li>已修课程：智能计算系统、机器人导论、现代最优化理论与方法、数理统计等</li>
+                <li>科研工具：掌握LaTeX学术写作、Matlab/Simulink仿真、PyTorch深度学习框架</li>
+            </ul>
+        </div>
+        <div class="education-item">
+            <h3>工学学士，自动化专业 - 华中科技大学</h3>
+            <p class="date">2019 - 2022</p>
+            <ul>
+                <li>主修课程：自控原理、微积分、电路理论、信号与系统等核心课程</li>
+                <li>辅修课程：创业学、管理学，具备跨学科知识整合能力</li>
+                <li>学业表现：专业排名前5%，获学习优秀奖学金、自强奖学金</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>项目经验</h2>
+        <div class="experience-item">
+            <h3>航天器任务调度系统（SpacecraftTaskScheduler）</h3>
+            <p class="date">2024/5 - 至今</p>
+            <p class="company">国自然重点项目</p>
+            <ul>
+                <li>系统架构：基于Vue.js+FastAPI的四层架构（前端/视图/API/框架层），集成Ant Design/Pinia工具链</li>
+                <li>核心模块：资源池动态生成（效率提升40%）、任务可行时间窗计算、多目标优化算法</li>
+                <li>技术创新：通用的统一建模、操作流程可视化</li>
+                <li>项目成果：完成6大核心模块开发，大幅降低系统操作的技术难度</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <h3>第十二届中国软件杯大赛一等奖</h3>
+            <p class="date">2023/6 - 2023/8</p>
+            <p class="company">工信部/教育部</p>
+            <ul>
+                <li>项目名称：智慧校园——综合服务学工平台（团队核心开发）</li>
+                <li>开发框架：借助金蝶云苍穹低代码开发平台，短时间内开发出满足需求的智慧学工管理系统</li>
+                <li>创新点：借助苍穹 AI 能力，在迎新业务环节用 OCR 能力，实现迎新报道时一键登记的效果；在学工业务各环节嵌入对话机器人，实现学工业务的自助服务</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="ideas">
+        <h2>产品创意</h2>
+        <div class="idea-item">
+            <h3>开源医疗AI模型平台</h3>
+            <p>通过整合先进的AI技术和医疗资源，为每个人提供私人顶级AI医疗专家服务，降低就医成本，缓解医疗资源压力。</p>
+        </div>
+        <div class="idea-item">
+            <h3>多功能魔镜</h3>
+            <p>以实体镜子的形式呈现，主要功能为可以进行衣服试穿（虚拟换装），通过虚拟换装技术，使得不用真正的穿上衣服就可以看到穿上特定衣服的效果。附加功能也可以有化妆时进行提示等。</p>
+        </div>
+        <div class="idea-item">
+            <h3>相框虚拟人</h3>
+            <p>以相框的形式呈现，配备高清显示屏，用户可以上传一张照片，设备将基于照片生成一个虚拟人。虚拟人能够通过调用大模型技术与用户进行自然对话，提供情感陪伴。</p>
+        </div>
+        <div class="idea-item">
+            <h3>变声话筒</h3>
+            <p>旨在解决音色或音调容易让人打瞌睡的问题，通过实时变声技术为用户提供了一种全新的声音体验。特别适合教师、主播、客服、演讲者等需要长时间讲话的人群。</p>
+        </div>
+        <div class="idea-item">
+            <h3>自动化线上教学平台</h3>
+            <p>提供一个全面的学习环境，涵盖理论知识、实践操作、项目实践和深入思考四大板块。平台结合理论与实践，帮助学习者深入理解和应用自动化及相关领域的知识。</p>
+        </div>
+    </section>
+
     <footer>
-        <p>联系方式: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <p>个人网站: <a href="https://gitee.com/husterzj">https://gitee.com/husterzj</a></p>
     </footer>
-    <script src="js/script.js"></script>
 </body>
 </html>
