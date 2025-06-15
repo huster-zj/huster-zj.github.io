@@ -1,45 +1,52 @@
-# Personal Resume
+<!--
+ * @Author: Jerry
+ * @Date: 2025-06-15 09:52:23
+ * @LastEditors: Do not edit
+ * @LastEditTime: 2025-06-15 09:54:22
+ * @FilePath: \huster-zj.github.io\README.md
+-->
+# 个人简历
 
-This project is a personal resume webpage that showcases my professional experience, skills, and education. It is designed to be visually appealing and responsive across different devices.
+这个项目是一个展示我的专业经验、技能和教育背景的个人简历网页。它设计得具有视觉吸引力，并能在不同设备上自适应显示。
 
-## Project Structure
+## 项目结构
 
-- `index.html`: The main HTML file containing the structure and content of the resume.
-- `css/main.css`: The primary stylesheet for styling the resume.
-- `css/responsive.css`: Styles for ensuring the resume looks good on various screen sizes.
-- `js/script.js`: JavaScript file for adding interactivity and dynamic effects to the resume.
-- `assets/fonts/custom-fonts.css`: Styles for custom fonts used in the resume.
-- `.gitignore`: Lists files and directories to be ignored by version control.
+- `index.html`：包含简历结构和内容的主要HTML文件。
+- `css/main.css`：用于简历样式设计的主要样式表。
+- `css/responsive.css`：确保简历在各种屏幕尺寸上都能良好显示的样式。
+- `js/script.js`：为简历添加交互性和动态效果的JavaScript文件。
+- `assets/fonts/custom-fonts.css`：简历中使用的自定义字体样式。
+- `.gitignore`：列出被版本控制忽略的文件和目录。
 
-## Getting Started
+## 入门指南
 
-To get started with this project, follow these steps:
+要开始使用这个项目，请按照以下步骤操作：
 
-1. Clone the repository to your local machine:
+1. 将仓库克隆到本地机器：
    ```
-   git clone <repository-url>
+   git clone <仓库URL>
    ```
 
-2. Navigate to the project directory:
+2. 导航到项目目录：
    ```
    cd personal-resume
    ```
 
-3. Open `index.html` in your web browser to view the resume.
+3. 在网络浏览器中打开`index.html`查看简历。
 
-## Customization
+## 自定义
 
-Feel free to customize the content in `index.html` to reflect your own experiences and skills. You can also modify the styles in `css/main.css` and `css/responsive.css` to match your personal branding.
+您可以自由地修改`index.html`中的内容，以反映您自己的经历和技能。您还可以修改`css/main.css`和`css/responsive.css`中的样式，使其符合您的个人品牌形象。
 
-## Deployment
+## 部署
 
-To deploy your resume on GitHub Pages:
+要在GitHub Pages上部署您的简历：
 
-1. Push your changes to the `main` branch of your repository.
-2. Go to the repository settings on GitHub.
-3. Scroll down to the "GitHub Pages" section and select the `main` branch as the source.
-4. Your resume will be available at `https://<username>.github.io/<repository-name>/`.
+1. 将您的更改推送到仓库的`main`分支。
+2. 前往GitHub上的仓库设置。
+3. 向下滚动到"GitHub Pages"部分，选择`main`分支作为源。
+4. 您的简历将在`https://<用户名>.github.io/<仓库名>/`上可用。
 
-## License
+## 许可
 
-This project is open-source and available under the MIT License. Feel free to use and modify it as you wish.
+这个项目是开源的，并在MIT许可下可用。您可以随意使用和修改
