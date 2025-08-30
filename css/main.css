@@ -208,3 +208,20 @@ footer a:hover {
     margin-right: 8px;
     color: var(--primary-color);
 }
+
+/* 下载按钮样式 */
+.download-btn {
+    margin-top: 16px;
+    padding: 8px 20px;
+    font-size: 16px;
+    background-color: #3b82f6;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.download-btn:hover {
+    background-color: #2563eb;
+}
