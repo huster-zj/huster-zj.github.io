@@ -165,6 +165,40 @@
     #portfolio li {
         padding: 12px;
     }
+    
+    /* 证书堆叠移动端优化 */
+    .certificates-stack {
+        height: auto;
+        position: static;
+    }
+    
+    .certificate-item {
+        position: static;
+        margin-bottom: 15px;
+        transform: none !important;
+    }
+    
+    .certificate-item:nth-child(1),
+    .certificate-item:nth-child(2),
+    .certificate-item:nth-child(3),
+    .certificate-item:nth-child(4) {
+        top: auto;
+        z-index: auto;
+        transform: none !important;
+    }
+    
+    .certificate-detail {
+        max-height: none;
+        padding: 15px;
+    }
+    
+    .certificate-item:hover {
+        transform: none !important;
+    }
+    
+    .certificate-item:hover .certificate-detail {
+        max-height: none;
+    }
 
     /* 头部移动端优化 */
     header h1 {

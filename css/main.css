@@ -394,3 +394,240 @@ body {
 * {
     font-variant-numeric: tabular-nums;
 }
+
+/* 附件证书堆叠样式 */
+.certificates-stack {
+    position: relative;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.certificate-item {
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border: 1px solid #e9ecef;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.certificate-item:nth-child(1) {
+    top: 0;
+    z-index: 4;
+    transform: translateY(0) scale(1);
+}
+
+.certificate-item:nth-child(2) {
+    top: 10px;
+    z-index: 3;
+    transform: translateY(0) scale(0.95);
+}
+
+.certificate-item:nth-child(3) {
+    top: 20px;
+    z-index: 2;
+    transform: translateY(0) scale(0.9);
+}
+
+.certificate-item:nth-child(4) {
+    top: 30px;
+    z-index: 1;
+    transform: translateY(0) scale(0.85);
+}
+
+.certificate-preview {
+    padding: 20px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    position: relative;
+}
+
+.certificate-preview h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.cert-date {
+    margin: 0;
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+.certificate-detail {
+    padding: 20px;
+    background: white;
+    color: var(--text-color);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.certificate-detail h3 {
+    color: var(--primary-color);
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.certificate-detail .cert-date {
+    color: var(--secondary-color);
+    margin: 0 0 15px 0;
+    font-size: 0.9em;
+}
+
+.cert-description {
+    margin: 0 0 15px 0;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.cert-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.cert-tags span {
+    background: var(--accent-color);
+    color: var(--primary-color);
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+/* 悬停效果 */
+.certificate-item:hover {
+    z-index: 10 !important;
+    transform: translateY(-10px) scale(1.02) !important;
+    box-shadow: var(--card-hover-shadow);
+}
+
+.certificate-item:hover .certificate-detail {
+    max-height: 500px;
+    padding: 20px;
+}
+
+/* 悬停时其他证书的视觉效果 */
+.certificates-stack:hover .certificate-item:not(:hover) {
+    opacity: 0.7;
+    transform: translateY(5px) scale(0.9) !important;
+}
+
+/* 证书展示样式 */
+#certificates .certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 0;
+}
+
+.certificate-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    border: 1px solid var(--accent-color);
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.certificate-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.certificate-card h3 {
+    color: var(--text-color);
+    font-size: 1.1em;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+/* 证书展示样式 - 直接显示图片 */
+#certificates .certificates-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.certificate-row {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.certificate-img {
+    border-radius: 4px;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: auto;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+/* 第一排 - 横版证书 */
+.certificate-row.horizontal .certificate-img {
+    width: 350px;
+    height: 250px;
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 350/250;
+}
+
+/* 第二排 - 竖版证书 */
+.certificate-row.vertical .certificate-img {
+    width: 200px;
+    height: 280px;
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 200/280;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+    .certificate-row.horizontal .certificate-img {
+        width: 300px;
+        height: 200px;
+    }
+    
+    .certificate-row.vertical .certificate-img {
+        width: 180px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .certificate-row {
+        gap: 10px;
+    }
+    
+    .certificate-row.horizontal .certificate-img {
+        width: 250px;
+        height: 170px;
+    }
+    
+    .certificate-row.vertical .certificate-img {
+        width: 160px;
+        height: 220px;
+    }
+}
