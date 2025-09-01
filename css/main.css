@@ -5,6 +5,10 @@
     --background-color: #f5f5f5;
     --text-color: #333;
     --accent-color: #e1e1e1;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --card-hover-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    --border-radius: 12px;
+    --transition: all 0.3s ease;
 }
 
 * {
@@ -21,6 +25,8 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
 }
 
 /* 头部样式 */
@@ -29,23 +35,34 @@ header {
     padding: 40px 0;
     background-color: var(--primary-color);
     color: white;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     margin-bottom: 30px;
     position: relative;
 }
 
 header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    font-size: 2em;
+    margin-bottom: 5px;
 }
 
 .contact-info {
-    margin-top: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-info p {
+    margin: 0;
+    font-style: normal;
 }
 
 .contact-info a {
     color: white;
     text-decoration: none;
+    font-style: normal;
 }
 
 .contact-info a:hover {
@@ -81,8 +98,14 @@ section {
     background: white;
     padding: 30px;
     margin-bottom: 30px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+}
+
+section:hover {
+    box-shadow: var(--card-hover-shadow);
+    transform: translateY(-2px);
 }
 
 h2 {
@@ -90,27 +113,50 @@ h2 {
     border-bottom: 2px solid var(--accent-color);
     padding-bottom: 10px;
     margin-bottom: 20px;
+    font-size: 1.8em;
 }
 
 /* 教育和工作经历样式 */
 .education-item, .experience-item {
     margin-bottom: 30px;
+    padding: 20px;
+    border-left: 4px solid var(--primary-color);
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    transition: var(--transition);
+}
+
+.education-item:hover, .experience-item:hover {
+    border-left-width: 6px;
+    transform: translateX(5px);
+    box-shadow: var(--card-shadow);
 }
 
 .education-item h3, .experience-item h3 {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     margin-bottom: 10px;
+    font-size: 1.3em;
+    font-weight: 600;
 }
 
 .date {
     color: var(--primary-color);
     font-style: italic;
     margin-bottom: 10px;
+    font-weight: 500;
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.9em;
 }
 
 .company {
     color: var(--secondary-color);
     margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 1.1em;
 }
 
 ul {
@@ -144,6 +190,145 @@ ul li:before {
     font-size: 0.9em;
 }
 
+/* 作品集和思维导图样式 */
+#portfolio ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding-left: 0;
+}
+
+#portfolio li {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    border: 1px solid #e9ecef;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+#portfolio li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    transition: var(--transition);
+}
+
+#portfolio li:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-hover-shadow);
+    border-color: var(--primary-color);
+}
+
+#portfolio li:hover::before {
+    width: 6px;
+}
+
+#portfolio li strong {
+    color: var(--primary-color);
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 8px;
+}
+
+#portfolio li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    word-break: break-all;
+    transition: var(--transition);
+}
+
+#portfolio li a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+
+
+/* 思维导图标题框样式 */
+.roadmap-item {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    border: 1px solid #e9ecef;
+    margin-bottom: 20px;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.roadmap-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    transition: var(--transition);
+}
+
+.roadmap-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--card-shadow);
+    border-color: var(--primary-color);
+}
+
+.roadmap-item:hover::before {
+    width: 6px;
+}
+
+.roadmap-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.roadmap-item ul {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.roadmap-item ul li {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+    transition: var(--transition);
+    font-size: 0.9em;
+    color: var(--secondary-color);
+}
+
+.roadmap-item ul li:hover {
+    background: rgba(90, 90, 120, 0.05);
+    border-color: var(--primary-color);
+    transform: translateX(3px);
+    color: var(--primary-color);
+}
+
+.roadmap-item ul li a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: var(--transition);
+}
+
+.roadmap-item ul li a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
 /* 产品创意样式 */
 .idea-item {
     margin-bottom: 25px;
@@ -170,44 +355,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* ROADMAP 部分样式 */
-.roadmap-item {
-    margin-bottom: 25px;
-}
 
-.roadmap-item h3 {
-    color: var(--primary-color);
-    margin-bottom: 15px;
-}
-
-.roadmap-item ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.roadmap-item ul li {
-    margin-bottom: 12px;
-}
-
-.roadmap-item ul li a {
-    color: var(--secondary-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-    display: inline-block;
-    padding: 5px 0;
-}
-
-.roadmap-item ul li a:hover {
-    color: var(--primary-color);
-    text-decoration: underline;
-}
-
-/* 添加一个小图标 */
-.roadmap-item ul li a::before {
-    content: "→";
-    margin-right: 8px;
-    color: var(--primary-color);
-}
 
 /* 下载按钮样式 */
 .download-btn {
@@ -224,4 +372,25 @@ footer a:hover {
 
 .download-btn:hover {
     background-color: #2563eb;
+}
+
+/* 数字字体优化 - 使用等宽字体 */
+.date, .contact-info, .download-btn {
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'Source Code Pro', 'Courier New', monospace;
+}
+
+/* 针对包含数字的标题 */
+.experience-item h3, .education-item h3 {
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'Source Code Pro', 'Courier New', monospace;
+}
+
+/* 全局数字字体优化 */
+body {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+}
+
+/* 确保所有数字都使用等宽字体 */
+* {
+    font-variant-numeric: tabular-nums;
 }

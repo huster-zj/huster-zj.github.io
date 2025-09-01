@@ -29,6 +29,31 @@
     .skills {
         flex-direction: column;
     }
+    
+    /* 作品集响应式 */
+    #portfolio ul {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    #portfolio li {
+        padding: 15px;
+    }
+    
+    /* 教育和工作经历响应式 */
+    .education-item, .experience-item {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .education-item h3, .experience-item h3 {
+        font-size: 1.1em;
+    }
+    
+    .date {
+        font-size: 0.8em;
+        padding: 3px 10px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -68,6 +93,50 @@
     #skills ul, #interests ul {
         justify-content: center;
     }
+    
+    /* 作品集移动端优化 */
+    #portfolio ul {
+        grid-template-columns: 1fr;
+    }
+    
+    #portfolio li {
+        padding: 15px;
+    }
+    
+    #portfolio li strong {
+        font-size: 1em;
+    }
+    
+    /* 经历项目移动端优化 */
+    .education-item, .experience-item {
+        padding: 15px;
+        border-left-width: 3px;
+    }
+    
+    .education-item:hover, .experience-item:hover {
+        border-left-width: 4px;
+        transform: translateX(3px);
+    }
+    
+    /* 思维导图移动端优化 */
+    .roadmap-item {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .roadmap-item h3 {
+        font-size: 1.1em;
+    }
+    
+    .roadmap-item ul {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    
+    .roadmap-item ul li {
+        padding: 6px 10px;
+        font-size: 0.85em;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -81,5 +150,29 @@
 
     section {
         padding: 15px;
+    }
+    
+    /* 超小屏幕优化 */
+    .education-item, .experience-item {
+        padding: 12px;
+    }
+    
+    .date {
+        font-size: 0.75em;
+        padding: 2px 8px;
+    }
+    
+    #portfolio li {
+        padding: 12px;
+    }
+
+    /* 头部移动端优化 */
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 10px;
     }
 }
