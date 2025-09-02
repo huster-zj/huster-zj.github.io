@@ -571,6 +571,13 @@ body {
     flex-wrap: wrap;
 }
 
+.certificate-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .certificate-img {
     border-radius: 4px;
     image-rendering: -webkit-optimize-contrast;
@@ -581,6 +588,25 @@ body {
     backface-visibility: hidden;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.certificate-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+    position: relative;
+}
+
+.certificate-caption {
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: var(--secondary-color);
+    font-weight: 500;
+    line-height: 1.4;
+    max-width: 100%;
+    text-align: center;
 }
 
 /* 第一排 - 横版证书 */
