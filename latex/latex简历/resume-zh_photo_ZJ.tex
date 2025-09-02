@@ -1,0 +1,121 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+\usepackage{graphicx}
+\usepackage{zh_CN-Adobefonts_external}
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=black} % 保持链接颜色与正文一致，打印不突兀
+\usepackage{fontawesome}
+
+% 调整页边距，减少上边距让内容上移
+\usepackage{geometry}
+\geometry{top=0.8cm, bottom=1.5cm, left=1.5cm, right=1.5cm}
+
+\begin{document}
+	\pagenumbering{gobble}
+	
+	% 个人信息区（减少顶部空白并优化间距）
+	\vspace*{-10pt} % 减少个人信息区上方的空白
+	\noindent
+	\begin{tabular}{@{}p{0.64\textwidth}@{\hspace{0.02\textwidth}}p{0.34\textwidth}@{}}
+		\centering
+		\LARGE\bfseries 张建\\[6pt] % 减少名字下方的间距
+		\normalsize
+		求职意向：AI产品经理\\[3pt] % 减少行间距
+		个人网站：\href{https://husterzj.info/}{HUSTERZJ.INFO}\\[3pt]
+		\faEnvelope\ m202473806@hust.edu.cn\\[3pt]
+		\faPhone\ 15237776378 \hspace{1em} \faCalendar\ 24岁
+		&
+		\raggedleft
+		\vspace{-30pt} % 微调照片的垂直位置
+		\includegraphics[width=1in]{zj}
+	\end{tabular}
+	\vspace{-5pt} % 减少个人信息区与下一部分的间距
+	
+	\section{\faCog\ 专业技能}
+	\begin{itemize}[parsep=0.5ex]
+		\item 需求分析与流程设计：具备从0到1需求分析、业务流程拆解能力
+		\item 产品工具应用：熟练使用产品原型工具（Axure/墨刀），能独立完成原型设计、需求梳理与项目文档沉淀
+		\item 项目管理与协作：具备跨角色协作能力；可通过会议主持、目标拆解、分工协调推动项目落地
+		\item AI技术与应用：熟悉提示词工程、RAG、大模型微调等技术，能结合业务场景设计落地方案
+		\item 技术与开发基础：较熟悉Python、JavaScript编程；了解Vue前端及FastAPI/Django框架；精通Git
+	\end{itemize}
+	
+	% 以下内容保持不变...
+	\section{\faGraduationCap\ 教育经历}
+	\datedsubsection{\textbf{华中科技大学} \hspace{1em} \textit{人工智能与自动化学院 - 智能科学与技术学硕}}{2024 -- 至今}
+	主修课程：智能计算系统、机器人导论、现代最优化理论与方法、工业视觉检测等
+	
+	\datedsubsection{\textbf{华中科技大学} \hspace{1em} \textit{人工智能与自动化学院 - 自动化专业工学学士}}{2019 -- 2022}
+	专业排名前5\%。主修课程：模式识别、计算机网络、数据结构、C语言、自动控制原理、电力拖动、电力电子技术、模电、数电等
+	
+	\section{\faBriefcase\ 项目经历}
+	% 项目经历彻底删除所有链接，仅保留核心工作描述
+	\datedsubsection{\textbf{第十二届中国软件杯大赛国奖} \hspace{3em} {团队队长、核心开发}}{2023.6 -- 2023.8}
+	\large 简要介绍：担任弄潮社副社长带领团队借助金蝶云苍穹低代码开发平台搭建智慧学工管理系统
+	\begin{itemize}
+		\item 基础功能搭建：结合业务需求进行页面建模、业务流配置、权限分配和数据分析。
+		\item AI相关：在学工业务各环节嵌入对话机器人，并在迎新业务环节使用OCR，实现一键登记
+		\item 主要贡献：对接金蝶培训人员，高效主持会议分解项目目标进行人员分工，并参与项目开发
+
+	\end{itemize}
+	
+	\datedsubsection{\textbf{航天器任务调度原型系统开发} \hspace{3em} {国自然重点项目、核心开发}}{2024.5 -- 至今}
+	\large 简要介绍：研发通用调度分析工具软件，为复杂航天任务提供全流程支持
+	\begin{itemize}
+		\item 目标：让用户可以在几分钟内定义复杂的航天器任务调度问题，选择合适的算法并配置参数得到解决方案，并通过甘特图或表格图形化显示
+		\item 模块划分：规划包、资源和任务管理、约束定义、算法配置、调度结果分析六大核心模块
+		\item 主要贡献：主导软件系统开发全流程，包括需求分析、界面设计、数据库设计、接口设计、原型系统开发等
+	\end{itemize}
+	
+	\datedsubsection{\textbf{航天调度模型微调与Agent规划技术研究} \hspace{3em} {科研探索项目、独立开发} }{2025.4 -- 2025.6}
+	\large 简要介绍：基于LLama-Factory框架在华科高性能计算平台进行大模型微调；进行Agent规划技术相关的科研探索。
+	\begin{itemize}
+		\item 算例生成：根据真实的航天任务算例和用户需求，生成具有相似特性和约束条件的伪真实算例
+		\item 自动建模：接收用户自然语言输入，将文本语义解析为结构化语义数据，并转化为模型文件
+		\item 选择算法：根据模型特性自动从启发式/经典优化/深度强化学习算法库中选择合适的算法
+		\item 智能助手：借助RAG匹配多处文档，快速统计并回复用户问题
+	\end{itemize}
+	
+	\datedsubsection{\textbf{开源项目汇总研究导航} \hspace{3em} {个人项目、独立维护}}{2022.9 -- 至今}
+	结合ROADMAP开源工具以及飞书汇总、整理分类值得学习和借鉴的开源项目，方便后续使用和深入研究，涵盖软件类和硬件类各种开源项目
+	\begin{itemize}
+		\item 软件类：工作相关、学习资料、科研、LLM、软件开发、教程、工具、近期重点关注等
+		\item 硬件类：项目、标准、工具、教程、近期重点关注等
+		\item 项目分类：通过对项目进行打标签，分为尝试复现、对当前有帮助、稍微感兴趣、非常感兴趣等
+		\item 深入理解：通过写项目介绍，添加飞书文档或者其他链接来增强对项目的理解
+	\end{itemize}
+	
+	% 作品集：适配打印，一句话+纯文本链接，无引导词，排版简洁
+	\section{\faBook\ 作品集}
+	\begin{itemize}[parsep=10pt] % 宽松间距，打印后易读
+		\item \textbf{航天器任务调度原型系统}：图形化界面建模/调用算法自动生成方案，\href{https://astroscheduler.cn}{https://astroscheduler.cn}
+		\item \textbf{航天器调度系统文档思维导图}：项目有用参考链接、各个阶段的文档汇总，\href{https://roadmap.sh/r/scheduler}{https://roadmap.sh/r/scheduler}
+		\item \textbf{开源项目汇总研究导航}：整理分类研究的所有开源项目思维导图，\href{https://roadmap.sh/r/rdm-ud9x6}{https://roadmap.sh/r/rdm-ud9x6}
+		\item \textbf{航天调度模型开发}：模型微调代码仓库，\href{https://gitee.com/husterzj/fine-tuning}{https://gitee.com/husterzj/fine-tuning}
+		\item \textbf{Agent规划技术研究思维导图}：规划理论及Agent规划技术学习汇总，\href{https://roadmap.sh/r/rdm-skxnx}{https://roadmap.sh/r/rdm-skxnx}
+	\end{itemize}
+
+	\section{\faFileImageO\ 附件 - 相关证书}
+	% 第一排：横版证书（2张并排，控制宽度避免超出页面）
+	\begin{center}
+		\begin{tabular}{@{}cc@{}}
+			\includegraphics[width=0.45\textwidth]{fujian/1_软件杯证书.jpg} & 
+			\includegraphics[width=0.45\textwidth]{fujian/5_计算机网络三级证书.png} \\
+			\small 第十二届中国软件杯大赛国奖证书 & \small 计算机网络三级证书
+		\end{tabular}
+	\end{center}
+	\vspace{8pt} % 上下排证书间距
+	% 第二排：竖版证书（4张并排，缩小宽度适配横向布局）
+	\begin{center}
+		\begin{tabular}{@{}cccc@{}}
+			\includegraphics[width=0.22\textwidth]{fujian/2_弄潮社副会长.jpg} & 
+			\includegraphics[width=0.22\textwidth]{fujian/3_成熙国际英语高级班证书.png} & 
+			\includegraphics[width=0.22\textwidth]{fujian/4_蓝桥杯三等奖.jpg} & 
+			\includegraphics[width=0.22\textwidth]{fujian/6_CIMC.png} \\
+			\small 弄潮社副会长任职证书 & \small 成熙国际英语高级班证书 & \small 蓝桥杯三等奖证书 & \small CIMC相关证书
+		\end{tabular}
+	\end{center}
+	
+\end{document}
