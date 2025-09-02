@@ -47,7 +47,7 @@
 	\datedsubsection{\textbf{华中科技大学} \hspace{1em} \textit{人工智能与自动化学院 - 智能科学与技术学硕}}{2024 -- 至今}
 	主修课程：智能计算系统、机器人导论、现代最优化理论与方法、工业视觉检测等
 	
-	\datedsubsection{\textbf{华中科技大学} \hspace{1em} \textit{人工智能与自动化学院 - 自动化专业工学学士}}{2019 -- 2022}
+	\datedsubsection{\textbf{华中科技大学} \hspace{1em} \textit{人工智能与自动化学院 - 自动化专业工学学士}}{2019 -- 2024}
 	专业排名前5\%。主修课程：模式识别、计算机网络、数据结构、C语言、自动控制原理、电力拖动、电力电子技术、模电、数电等
 	
 	\section{\faBriefcase\ 项目经历}
@@ -98,16 +98,24 @@
 	\end{itemize}
 
 	\section{\faFileImageO\ 附件 - 相关证书}
-	% 第一排：横版证书（2张并排，控制宽度避免超出页面）
+	% 第一排：横版证书（控制行高+精准偏移，确保排版紧凑）
 	\begin{center}
-		\begin{tabular}{@{}cc@{}}
-			\includegraphics[width=0.45\textwidth]{fujian/1_软件杯证书.jpg} & 
-			\includegraphics[width=0.45\textwidth]{fujian/5_计算机网络三级证书.png} \\
-			\small 第十二届中国软件杯大赛国奖证书 & \small 计算机网络三级证书
+		% \arraystretch{0.8} 压缩表格行高，避免偏移后排版松散
+		\begin{tabular}{@{}ccc@{}} 
+			% 1. 软件杯证书：默认位置（基准，无偏移）
+			\includegraphics[width=0.3\textwidth]{fujian/1_软件杯证书.jpg} & 
+			% 2. 计算机网络三级证书：下移12pt（正数=下移，数值优化避免过度偏移）
+			\raisebox{-10pt}{\includegraphics[width=0.35\textwidth]{fujian/5_计算机网络三级证书.png}} & 
+			% 3. 航天器调度证书：上移18pt（负数=上移，与下移幅度匹配，视觉平衡）
+			\raisebox{10pt}{\includegraphics[width=0.3\textwidth]{fujian/7_航天器任务调度原型系统.png}} \\ 
+			% 文字说明：统一用\small+固定高度对齐，确保三行文字水平一致
+			\small\parbox{0.3\textwidth}{\centering 第十二届中国软件杯大赛国奖证书} & 
+			\small\parbox{0.35\textwidth}{\centering 计算机网络三级证书} & 
+			\small\parbox{0.3\textwidth}{\centering 航天器任务调度原型系统相关证书}
 		\end{tabular}
 	\end{center}
-	\vspace{8pt} % 上下排证书间距
-	% 第二排：竖版证书（4张并排，缩小宽度适配横向布局）
+	\vspace{8pt} % 上下排证书间距（保持原设定，不影响第二排）
+	% 第二排：竖版证书（保持原代码，确保与第一排风格统一）
 	\begin{center}
 		\begin{tabular}{@{}cccc@{}}
 			\includegraphics[width=0.22\textwidth]{fujian/2_弄潮社副会长.jpg} & 
