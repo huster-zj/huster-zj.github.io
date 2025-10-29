@@ -657,3 +657,22 @@ body {
         height: 220px;
     }
 }
+
+/* 附件大图（铺满一行）覆盖样式 */
+#certificates .certificates-container {
+    width: 100%;
+    padding: 0;
+}
+
+#certificates .certificate-row {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+#certificates .certificate-row .certificate-img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    display: block;
+    aspect-ratio: auto !important;
+}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.12.11)  29 OCT 2025 08:38
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.12.11)  29 OCT 2025 09:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -959,37 +959,34 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\FA' on input line 61.
+(hyperref)                removing `\FA' on input line 60.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\FA' on input line 69.
+(hyperref)                removing `\FA' on input line 67.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\FA' on input line 97.
+(hyperref)                removing `\FA' on input line 95.
 
-[1
 
-]
-Overfull \hbox (23.21548pt too wide) in paragraph at lines 103--104
+Overfull \hbox (23.21548pt too wide) in paragraph at lines 99--100
 []\TU/AdobeSongStd-Light.otf(0)/b/n/12 航 天 器 调 度 系 统 文 档 思 维 导 图\TU/AdobeSongSt
 d-Light.otf(0)/m/n/12 ：|  项 目 有 用 参 考 链 接、|  各 个 阶 段 的 文 档 汇 总，| [][]\TU/texgyr
 etermes(0)/m/n/12 https://roadmap.sh/r/scheduler[][] 
  []
 
+[1
+
+]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\FA' on input line 107.
+(hyperref)                removing `\FA' on input line 104.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 110.
 File: fujian/7_航天器任务调度原型系统.png Graphic file (type bmp)
 <fujian/7_航天器任务调度原型系统.png>
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 112.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 112.
+File: fujian/8_开源项目路线图.png Graphic file (type bmp)
+<fujian/8_开源项目路线图.png>
 [2] (./resume-zh_photo_ZJ.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -1000,14 +997,14 @@ L3 programming layer <2022/08/05>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `resume-zh_photo_ZJ.out' has not changed.
-(rerunfilecheck)             Checksum: 9CB583BF0275D11D209F47D21EDFEBDA;2059.
+(rerunfilecheck)             Checksum: 3A68C218570C1313F90FCEDF9AEC3D81;2117.
  ) 
 Here is how much of TeX's memory you used:
- 26248 strings out of 474773
- 564092 string characters out of 5761288
+ 26191 strings out of 474773
+ 560016 string characters out of 5761288
  1972842 words of memory out of 5000000
- 47964 multiletter control sequences out of 15000+600000
- 562975 words of font info for 93 fonts, out of 8000000 for 9000
+ 47912 multiletter control sequences out of 15000+600000
+ 562030 words of font info for 86 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  114i,9n,130p,474b,461s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
