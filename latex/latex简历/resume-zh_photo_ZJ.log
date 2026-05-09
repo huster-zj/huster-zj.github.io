@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.12.11)  29 OCT 2025 09:18
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.12.11)  9 MAY 2026 17:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -965,28 +965,19 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\FA' on input line 67.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\FA' on input line 95.
-
-
-Overfull \hbox (23.21548pt too wide) in paragraph at lines 99--100
-[]\TU/AdobeSongStd-Light.otf(0)/b/n/12 航 天 器 调 度 系 统 文 档 思 维 导 图\TU/AdobeSongSt
-d-Light.otf(0)/m/n/12 ：|  项 目 有 用 参 考 链 接、|  各 个 阶 段 的 文 档 汇 总，| [][]\TU/texgyr
-etermes(0)/m/n/12 https://roadmap.sh/r/scheduler[][] 
- []
-
 [1
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\FA' on input line 104.
+(hyperref)                removing `\FA' on input line 103.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\FA' on input line 106.
 
 File: fujian/7_航天器任务调度原型系统.png Graphic file (type bmp)
 <fujian/7_航天器任务调度原型系统.png>
-File: fujian/8_开源项目路线图.png Graphic file (type bmp)
-<fujian/8_开源项目路线图.png>
 [2] (./resume-zh_photo_ZJ.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -997,15 +988,15 @@ L3 programming layer <2022/08/05>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `resume-zh_photo_ZJ.out' has not changed.
-(rerunfilecheck)             Checksum: 3A68C218570C1313F90FCEDF9AEC3D81;2117.
+(rerunfilecheck)             Checksum: 0678548736B3F9BDB71F32A99F0295C2;2431.
  ) 
 Here is how much of TeX's memory you used:
- 26191 strings out of 474773
- 560016 string characters out of 5761288
- 1972842 words of memory out of 5000000
- 47912 multiletter control sequences out of 15000+600000
+ 26272 strings out of 474773
+ 566711 string characters out of 5761288
+ 1970842 words of memory out of 5000000
+ 47994 multiletter control sequences out of 15000+600000
  562030 words of font info for 86 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 114i,9n,130p,474b,461s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 114i,9n,130p,474b,464s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on resume-zh_photo_ZJ.pdf (2 pages).
