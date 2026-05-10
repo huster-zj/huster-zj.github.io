@@ -676,3 +676,40 @@ body {
     display: block;
     aspect-ratio: auto !important;
 }
+
+/* 自我评价部分样式 */
+#evaluation .indent-text {
+    text-indent: 2em;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+#evaluation .resource-list {
+    list-style: none;
+    padding-left: 1.5em;
+    margin-top: 10px;
+}
+
+#evaluation .resource-list li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 15px;
+}
+
+#evaluation .resource-list li:before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+.darkgreen-link {
+    color: #006400;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.darkgreen-link:hover {
+    color: #004d00;
+    text-decoration: underline;
+}
