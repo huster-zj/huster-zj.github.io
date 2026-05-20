@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.12.21)  10 MAY 2026 15:52
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.12.21)  20 MAY 2026 22:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -990,6 +990,15 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\FA' on input line 52.
 
 
+Overfull \hbox (10.26613pt too wide) in paragraph at lines 55--56
+[]\TU/AdobeSongStd-Light.otf(0)/m/n/10.95 技 术 与 开 发 基 础：|  熟 练 掌 握 \TU/texgyret
+ermes(0)/m/n/10.95 ClaudeCode / Cursor \TU/AdobeSongStd-Light.otf(0)/m/n/10.95 
+等 \TU/texgyretermes(0)/m/n/10.95 AIcoding \TU/AdobeSongStd-Light.otf(0)/m/n/10.
+95 工 具 使 用 技 巧；|  熟 悉 \TU/texgyretermes(0)/m/n/10.95 Vue \TU/AdobeSongStd-Light
+.otf(0)/m/n/10.95 前 端 框 架、| \TU/texgyretermes(0)/m/n/10.95 FastAPI/Django
+ []
+
+
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\FA' on input line 60.
 
@@ -1002,11 +1011,15 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\FA' on input line 103.
+(hyperref)                removing `\FA' on input line 104.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\FA' on input line 114.
+(hyperref)                removing `\FA' on input line 113.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\FA' on input line 121.
 
 File: fujian/7_航天器任务调度原型系统.png Graphic file (type bmp)
 <fujian/7_航天器任务调度原型系统.png>
@@ -1020,15 +1033,15 @@ L3 programming layer <2022/08/05>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `resume-zh_photo_ZJ.out' has not changed.
-(rerunfilecheck)             Checksum: 0678548736B3F9BDB71F32A99F0295C2;2431.
+(rerunfilecheck)             Checksum: EF1B624E93BF41A085ACCB9E4423ADCD;2531.
  ) 
 Here is how much of TeX's memory you used:
  26315 strings out of 474773
  572863 string characters out of 5757283
- 1970842 words of memory out of 5000000
+ 1969842 words of memory out of 5000000
  48037 multiletter control sequences out of 15000+600000
  562030 words of font info for 86 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 114i,9n,130p,474b,464s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 114i,9n,130p,474b,458s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on resume-zh_photo_ZJ.pdf (2 pages).
