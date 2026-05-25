@@ -12,22 +12,23 @@
     <header>
         <img src="assets/fonts/photo.jpg" alt="张建的照片" class="profile-image">
         <h1>张建</h1>
-        <p>求职意向：Agent开发工程师</p>
+        <p>求职意向：Agent开发工程师 / 大模型应用开发 / AI 智能体工程师</p>
         <div class="contact-info">
             <p>个人网站：<a href="https://husterzj.info/" target="_blank">HUSTERZJ.INFO</a></p>
             <p>邮箱: <a href="mailto:m202473806@hust.edu.cn">m202473806@hust.edu.cn</a></p>
             <p>电话: 15237776378 </p>
         </div>
-        <button onclick="window.location.href='latex/latex简历/resume-zh_photo_ZJ.pdf'" class="download-btn">下载简历</button>
+        <button onclick="window.location.href='latex/latex简历/华中科技大学_张建.pdf'" class="download-btn">下载简历</button>
     </header>
 
     <section id="skills">
         <h2>专业技能</h2>
         <ul>
-            <li>AI技术与应用：了解ReAct、Plan-and-Solve、Reflection等智能体范式，Coze、Dify、n8n等Agent低代码平台以及LangChain等Agent开发框架，熟悉Agent Skills、Harness Engineering等技术以及OpenClaw等Agent框架，能结合业务场景设计落地方案</li>
-            <li>需求分析与产品工具应用：具备从0到1需求分析、业务流程拆解能力；熟练使用产品原型工具（Figma/Axure/墨刀），能独立完成需求梳理、原型设计、项目文档沉淀</li>
-            <li>项目管理与协作：具备跨角色协作能力；可通过会议主持、目标拆解、分工协调推动项目落地</li>
-            <li>技术与开发基础：熟练掌握ClaudeCode / Cursor等AIcoding工具使用技巧；熟悉Vue前端框架、FastAPI/Django后端框架以及Git版本控制</li>
+            <li>AI智能体开发：熟悉 ReAct、Plan-and-Solve、Reflection 等 Agent 决策范式；了解 LangChain、AutoGen、Openclaw 等框架；了解多智能体协同、向量数据库、Embedding技术；尝试过模型微调</li>
+            <li>Agent工程落地：熟悉 Coze、Dify、n8n 等低代码编排平台；具备 Agent Skills 设计、工具集成、流程编排与系统部署能力</li>
+            <li>全栈开发：熟练使用 Python；掌握 Vue3 前端开发 以及 FastAPI/Django 后端开发；熟悉 Git，有扎实的数据结构和算法基础</li>
+            <li>AI 工具链：精通 Cursor/ClaudeCode AI 编码；能独立完成需求分析、原型设计（Figma/Axure/墨刀）与项目文档沉淀</li>
+            <li>协作与交付：具备需求拆解、跨角色协同、项目推动与从 0→1 落地能力</li>
         </ul>
     </section>
 
@@ -47,56 +48,38 @@
 
     <section id="experience">
         <h2>项目经历</h2>
+
+        <div class="experience-item">
+            <h3>基于多智能体协同的智能旅行助手系统 <span style="font-weight:normal;">个人实践项目</span></h3>
+            <p class="date">2026.4 -- 2026.5 <a href="http://ideas-test.com/">http://ideas-test.com/</a></p>
+            <p style="font-size: 1.1em; margin: 8px 0;">技术栈：Python · FastAPI · Vue3 · LLM Agent · Tool Use · 高德地图API</p>
+            <ul>
+                <li><strong>多智能体架构设计</strong>：设计4个功能Agent（景点搜索/天气查询/酒店推荐/行程规划），各Agent配备专项Prompt与共享MCP工具集，实现职责分离与协同规划。</li>
+                <li><strong>工具调用与数据集成</strong>：集成高德地图API、天气服务等外部数据源，基于Tool Use模式实现动态信息获取与行程生成。</li>
+                <li><strong>Prompt工程</strong>：针对各Agent设计结构化System Prompt与Few-shot示例，引导LLM生成准确的工具调用与行程规划结果。</li>
+                <li><strong>预算自动核算</strong>：基于住宿等级、交通方式、景点门票自动计算费用明细，生成完整预算报告。</li>
+                <li><strong>全栈交付与部署上线</strong>：基于 FastAPI 提供后端 RESTful 服务，Vue3 集成高德地图实现路线可视化与点位标注；使用阿里云 ECS + 域名完成上线，通过 Nginx 反向代理实现前后端高效联调与稳定访问。</li>
+            </ul>
+        </div>
+
         <div class="experience-item">
             <h3>航天器任务调度原型系统开发 <span style="font-weight:normal;">国自然重点项目</span></h3>
-            <p class="date">2024.5 - 2025.10 <a href="https://astroscheduler.cn/">https://astroscheduler.cn/</a></p>
+            <p class="date">2024.5 -- 2025.10 <a href="https://astroscheduler.cn/">https://astroscheduler.cn/</a></p>
             <p style="font-size: 1.1em; margin: 8px 0;">技术栈：Python · FastAPI · Vue3 · TypeScript · Pinia</p>
             <ul>
-                <li>后端API开发：基于FastAPI构建RESTful API服务，设计并实现数据转换、预处理、调度算法调用等5+核心接口</li>
-                <li>算法集成与自动化：通过subprocess封装Java调度算法JAR，设计标准化输入输出接口，实现前后端与算法引擎的无缝集成，支持启发式算法的异步调用与结果解析</li>
-                <li>前端工程化：基于Vue3+TypeScript开发交互式配置界面，使用Pinia进行状态管理，集成dhtmlx-gantt实现调度结果甘特图可视化，支持资源/任务的多维度展示</li>
-                <li>系统架构设计：主导前后端分离架构设计，制定API规范，实现文件上传、数据持久化、异常处理等基础能力，保障系统可扩展性与稳定性</li>
-            </ul>
-        </div>
-
-        <div class="experience-item">
-            <h3>基于模型的Aicoding科研方向探索 <span style="font-weight:normal;">科研项目、独立开发</span></h3>
-            <p class="date">2025.4 - 至今</p>
-            <p>探索 AI Coding 新范式，推动研发流程从"基于对话(Chat)"和"基于文档(Document)"向"基于模型(Model)"的架构演进。</p>
-            <ul>
-                <li>MBSE理论深度实践：深度参与杭州华望系统工程专项研修，系统掌握MBSE核心理论；能够熟练运用MagicDraw等建模工具进行系统级需求、行为及结构建模，具备将复杂业务逻辑转化为规范化模型的能力。</li>
-                <li>高水平论文发表：撰写学术论文《基于MBSE的航天任务调度工具系统模型构建》，目前已投递至航天领域顶级期刊《载人航天》；文中详细阐述了如何通过模型驱动提升航天调度系统的逻辑一致性与研制效率。</li>
-                <li>核心技术专利申请：作为主要发明人申请专利《一种模型驱动的软件开发全流程自动生成方法及系统》；该专利提出了一种利用模型语义直接生成代码的创新架构。</li>
-            </ul>
-        </div>
-
-        <div class="experience-item">
-            <h3>华中科技大学 MBA《AI 赋能管理创新》课程代课讲师 <span style="font-weight:normal;">教育培训</span></h3>
-            <p class="date">2025.4 - 至今</p>
-            <p>受邀担任管理学院 MBA 班级实操课主讲，指导150+学生了解AI前沿概念以及动手实操各种AI工具</p>
-            <ul>
-                <li>AI 核心技术内化：系统讲解提示词工程、RAG、模型微调及智能体工作流等前沿概念，帮助学生构建从基础原理到业务场景适配的认知闭环。</li>
-                <li>前沿开发工具实操：指导学生完成 Cursor、Claude Code 等AI原生编程工具的部署与实战，演示如何利用AI提升业务流程自动化水平</li>
-                <li>智能体框架落地指导：深度解析OpenClaw智能体框架，带教环境搭建、Skill开发及多Agent协作技巧，培养学生设计可落地的企业级 AI Agent 方案能力。</li>
-            </ul>
-        </div>
-
-        <div class="experience-item">
-            <h3>开源项目汇总研究导航 <span style="font-weight:normal;">个人项目、独立维护</span></h3>
-            <p class="date">2022.9 - 至今 <a href="https://roadmap.sh/r/rdm-ud9x6">https://roadmap.sh/r/rdm-ud9x6</a></p>
-            <p>为满足个人学习复盘、对外交流分享需求，结合 ROADMAP 开源工具与飞书，系统汇总分类整理了值得深入学习与借鉴的开源项目，形成结构化导航体系。</p>
-            <ul>
-                <li>软件类：按应用场景划分，涵盖LLM、软件开发、教程、工具等，覆盖技术学习与实践全场景</li>
-                <li>硬件类：围绕硬件开发全流程分类，包含硬件项目案例、硬件设计与调试工具、教程等</li>
-                <li>项目分类：为项目按照关注程度打标签，划分为尝试复现、稍微感兴趣、非常感兴趣等</li>
-                <li>深入理解：针对重点项目撰写核心介绍并附加飞书文档链接及外部优质资源链接</li>
+                <li>开源项目地址：<a href="https://gitee.com/husterzj/spacetaskscheduler" style="color: #006400;">https://gitee.com/husterzj/spacetaskscheduler</a></li>
+                <li><strong>复杂业务建模与通用化架构设计</strong>：面对高度耦合、充满不确定性的航天调度场景，主导需求分析与领域建模，打通业务壁垒，将依赖人工经验的调度流程抽象为规划包管理、资源管理、任务管理、算法配置、结果生成5大标准化模块，基于清晰的通用化业务边界完成架构设计，支撑未来任务的可扩展接入</li>
+                <li><strong>外部工具封装与标准化调用</strong>：将Java启发式调度算法封装为标准化服务接口，设计JSON Schema输入输出协议，通过subprocess实现跨语言工具调用与结果解析，支持异步执行与异常回退</li>
+                <li><strong>多阶段工作流编排</strong>：设计并实现数据转换、约束预处理、算法调度、结果可视化的Pipeline API，基于Pydantic定义各阶段数据契约与状态流转机制，保障复杂任务链的可靠执行与错误隔离</li>
+                <li><strong>全栈工程化与部署上线</strong>：基于Vue3+TypeScript开发交互式配置界面，使用Pinia设计模块化状态管理，集成dhtmlx-gantt实现资源/任务多维度甘特图可视化；独立完成前后端分离架构设计与生产环境部署（Nginx + Linux Screen）</li>
+                <li><strong>LLM-Agent技术预研</strong>：规划系统v2.0智能化升级路径，设计基于大模型的冲突检测与消解方案——利用LLM解析调度结果中的资源冲突与约束违反，结合领域知识生成可执行消解建议；预研自然语言驱动的任务配置生成与外部求解器（CPLEX/COPT）Tool-use调用链路</li>
             </ul>
         </div>
     </section>
 
     <section id="evaluation">
         <h2>自我评价</h2>
-        <p class="indent-text">信奉长期主义，热爱阅读前沿论文、聆听深度访谈播客，始终保持极强的创新思维。喜欢动手实践，有阿里云12个域名（4个备案域名）以及租赁过20+服务器</p>
+        <p class="indent-text">深耕 AI 与智能系统领域，保持对前沿技术的高度敏锐与自驱学习。极具极客精神与强落地能力，累计持有 12 个域名（其中 4 个已备案），先后独立运维十余台服务器开展项目全生命周期部署与环境搭建。</p>
         <p class="indent-text">作为 ENFJ 型人格，我酷爱思考与总结，不断从学习实践中提炼属于自己的理论方法，有着很强的分享欲和表达欲。以下是我自己梳理的常用的资源地图：</p>
         <ul class="resource-list">
             <li>软件相关实用网址：<a href="https://roadmap.sh/r/rdm-xqyvk" target="_blank" class="darkgreen-link">https://roadmap.sh/r/rdm-xqyvk</a></li>
@@ -107,10 +90,10 @@
     <section id="honors">
         <h2>荣誉及证书</h2>
         <ul>
-            <li>奖项：“中国软件杯” 大学生软件设计大赛决赛三等奖、蓝桥杯Python三等奖、“西门子杯”信息化网络化赛道华中赛区三等奖</li>
+            <li>奖项：”中国软件杯” 大学生软件设计大赛决赛三等奖、蓝桥杯Python三等奖、”西门子杯”信息化网络化赛道华中赛区三等奖</li>
             <li>荣誉：优秀毕业生、优秀学生干部、一等硕士学业奖学金、海信奖学金、金毓岗陆兰英奖学金、自强奖学金、学习优秀奖学金</li>
-            <li>证书：计算机三级网络技术、 CET-6</li>
-            <li>学生工作：弄潮社（社团）副会长、学习委员</li>
+            <li>证书：计算机三级网络技术、 CET-6、MBSE（理论、实践与软件）高级证书</li>
+            <li>学生工作：弄潮社（社团）副会长、学习委员、MBA班级AI实操课程代理讲师（150+同学）</li>
         </ul>
     </section>
 
