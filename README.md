@@ -11,12 +11,13 @@
 
 ## 项目结构
 
-- `index.html`：包含简历结构和内容的主要HTML文件。
-- `css/main.css`：用于简历样式设计的主要样式表。
-- `css/responsive.css`：确保简历在各种屏幕尺寸上都能良好显示的样式。
-- `js/script.js`：为简历添加交互性和动态效果的JavaScript文件。
-- `assets/fonts/custom-fonts.css`：简历中使用的自定义字体样式。
-- `.gitignore`：列出被版本控制忽略的文件和目录。
+- `index.html`：简历网页的结构与内容。
+- `main.css`：网页的主要样式。
+- `responsive.css`：移动端与窄屏适配样式。
+- `script.js`：网页交互脚本预留文件。
+- `latex/张建-AI全栈开发.tex`：网页内容所依据的 LaTeX 简历源文件。
+- `latex/张建-AI全栈开发.pdf`：网页提供下载的 PDF 简历。
+- `latex/zj.jpg`：LaTeX 和网页共用的个人照片。
 
 ## 入门指南
 
@@ -32,11 +33,11 @@
    cd personal-resume
    ```
 
-3. 在网络浏览器中打开`index.html`查看简历。
+3. 在网络浏览器中打开 `index.html` 查看简历。
 
 ## 自定义
 
-您可以自由地修改`index.html`中的内容，以反映您自己的经历和技能。您还可以修改`css/main.css`和`css/responsive.css`中的样式，使其符合您的个人品牌形象。
+更新简历时，以 `latex/张建-AI全栈开发.tex` 为内容基准，并同步修改 `index.html`。网页样式位于根目录的 `main.css` 和 `responsive.css`。
 
 ## 部署
 
