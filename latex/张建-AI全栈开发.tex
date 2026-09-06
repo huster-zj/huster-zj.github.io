@@ -1,10 +1,9 @@
 % !TEX program = xelatex
-\documentclass[11pt]{article}
-
+\documentclass[10pt]{article}
 \usepackage{fontspec}
 \usepackage{xeCJK}
 \usepackage{graphicx}
-\usepackage[a4paper,top=0.65cm,bottom=0.75cm,left=1.25cm,right=1.25cm,nohead,nofoot]{geometry}
+\usepackage[a4paper,top=0.58cm,bottom=0.66cm,left=1.18cm,right=1.18cm,nohead,nofoot]{geometry}
 \usepackage{xcolor}
 \usepackage{fontawesome}
 \usepackage{titlesec}
@@ -13,82 +12,92 @@
 \usepackage{tabularx}
 
 \setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{2em}
 \setmainfont{TeX Gyre Termes}
 \setCJKmainfont{SimSun}
 \setCJKsansfont{SimHei}
-\setlist[itemize]{leftmargin=1.35em,itemsep=0.08em,topsep=0.18em,parsep=0em,partopsep=0em}
+\setlist[itemize]{leftmargin=1.32em,itemsep=0.04em,topsep=0.20em,parsep=0em,partopsep=0.20em}
 \definecolor{darkgreen}{RGB}{0,100,0}
-\hypersetup{colorlinks=true,urlcolor=darkgreen,linkcolor=darkgreen,unicode=true}
-
-\titleformat{\section}{\large\bfseries\raggedright}{}{0em}{}[\vspace{-0.35em}\titlerule]
-\titlespacing*{\section}{0pt}{0.55em}{0.28em}
+\hypersetup{colorlinks=true,urlcolor=darkgreen,linkcolor=darkgreen,unicode=true,pdftitle={张建-AI全栈开发},pdfauthor={张建}}
+\titleformat{\section}{\large\bfseries\raggedright}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{0.45em}{0.40em}
 \titleformat{\subsection}{\normalsize\bfseries\raggedright}{}{0em}{}
-\titlespacing*{\subsection}{0pt}{0.25em}{0.05em}
+\titlespacing*{\subsection}{0pt}{0.20em}{0.08em}
 \newcommand{\datedsubsection}[2]{\subsection{#1 \hfill \normalfont #2}}
 \newcommand{\tech}[1]{\textcolor{gray!85}{\small #1}}
+\raggedbottom
 
 \begin{document}
 \pagenumbering{gobble}
 \vspace*{-8pt}
-
 \begin{tabularx}{\textwidth}{@{}X r@{}}
-  \begin{minipage}[t]{0.78\textwidth}
+  \begin{minipage}[t]{0.79\textwidth}
     \centering
     {\LARGE\bfseries 张建}\\[3pt]
     {\normalsize 求职意向：AI 全栈开发}\\[2pt]
-    \faEnvelope \href{mailto:m202473806@hust.edu.cn}{m202473806@hust.edu.cn}
-    \quad \faPhone 15237776378\\[2pt]
-    \faGlobe \href{https://husterzj.info/}{husterzj.info}
-    \quad \faCodeFork \href{https://gitee.com/husterzj/spacetaskscheduler}{Gitee 项目仓库}
+    \faEnvelope\ \href{mailto:m202473806@hust.edu.cn}{m202473806@hust.edu.cn}
+    \quad \faPhone\ 15237776378\\[2pt]
+    \faGlobe\ \href{https://husterzj.info/}{husterzj.info}
+    \quad \faCodeFork\ \href{https://gitee.com/husterzj/spacetaskscheduler}{Gitee 项目仓库}
   \end{minipage}
   &
-  \begin{minipage}[t]{0.15\textwidth}
-    \raggedleft\vspace{-7pt}
-    \includegraphics[width=0.83in]{zj.jpg}
+  \begin{minipage}[t]{0.14\textwidth}
+    \raggedleft\vspace{-20pt}
+    \includegraphics[width=0.82in]{zj.jpg}
   \end{minipage}
 \end{tabularx}
 \vspace{-5pt}
 
-\section{\faCog 专业技能}
-\begin{itemize}
-  \item \textbf{产品与交付：}具备需求调研、竞品分析、业务建模、流程图与产品文档整理经验，参与功能测试、问题排查与方案复盘，能够从业务问题推进至系统实现和部署。
-  \item \textbf{全栈开发：}熟悉 Python、FastAPI、Vue3、TypeScript、Pinia、MySQL/Supabase；具备 RESTful 接口、结构化数据协议、前后端联调、Git 与 Linux/Nginx 部署经验。
-  \item \textbf{AI 应用：}了解 LLM Agent、Tool Use、MCP、Embedding 与向量检索；日常使用 Claude Code、Codex 等 AI 编码工具，具备低代码平台及 AI 工具链实践经验。
-\end{itemize}
-
-\section{\faGraduationCap 教育经历}
+\section{\faGraduationCap\ 教育经历}
 \datedsubsection{华中科技大学｜智能科学与技术｜学术型硕士}{2024.09 -- 2027.06（预计）}
-人工智能与自动化学院；2024--2025 学年一等硕士学业奖学金
+人工智能与自动化学院；2024--2025 学年一等硕士学业奖学金；研究涉及航天任务调度、系统建模及模型驱动开发。
 \datedsubsection{华中科技大学｜自动化｜工学学士}{2019.09 -- 2024.06}
-本科加权成绩 88.1，GPA 3.83；2022 年排名 16/187；推免攻读硕士研究生
+本科加权成绩 88.1，GPA 3.83；专业排名 16/187（截至 2022.04）；推免攻读硕士研究生。
 
-\section{\faBriefcase 实习经历}
-\datedsubsection{武汉归心科技有限公司｜全栈开发工程师}{2026.06 -- 至今}
-\tech{FastAPI · Supabase · Embedding · 向量检索 · AI 工具链}
+\section{\faCog\ 专业技能}
 \begin{itemize}
-  \item 参与 AI 招聘与人才认证平台研发，梳理业务模块及 Epic/Story 依赖，推进 Story 2.1--2.3 的主要开发、手动测试、缺陷复测与结果同步。
-  \item 排查企业端人才搜索异常，围绕 embedding 模型、向量维度、pgvector、数据覆盖率与评分日志定位问题，完成 embedding 服务切换及维度匹配调整。
-  \item 通过 Supabase REST API 分析表结构与业务数据链路，形成数据库结构及修改建议；完成 BMad V4 至 V6 迁移相关文档重构和新人开发指南。
-  \item 调研 Mercor、Juicebox、dinq 等 AI 招聘产品的功能、技术路线和商业模式，并参与“认证+简历”等产品方向讨论；修复生产环境 FastAPI 文档公网暴露问题。
+  \item \textbf{全栈与数据：}具有 Python、TypeScript、FastAPI、Vue3、Pinia、Next.js 开发实践；使用 Supabase/PostgreSQL、SQL、pgvector，参与接口联调、数据处理及 Embedding 适配。
+  \item \textbf{AI 与工程协作：}具备 API/MCP 验证、Agent 知识配置及 Claude Code、Codex 使用经验；了解 RAG、工具调用；实践 Git、Linux/Nginx 部署、功能测试、缺陷复测与文档整理。
 \end{itemize}
 
-\section{\faCode 项目经历}
-\datedsubsection{航天器任务调度原型系统｜国自然重点项目相关}{2024.05 -- 2025.10}
-\tech{Python · FastAPI · Vue3 · TypeScript · Pinia · Java · Nginx}
+\section{\faBriefcase\ 实习经历}
+\datedsubsection{武汉归心科技有限公司｜全栈开发工程师（实习）}{2026.06 -- 至今}
+\tech{Next.js · TypeScript · FastAPI · Supabase/PostgreSQL · pgvector}
 \begin{itemize}
-  \item 参与真实航天任务规划场景的需求梳理与业务建模，将资源、任务、约束、算法配置和结果整理为可配置的 Web 原型系统，开发规划包、主视图、报告与日志等模块。
-  \item 设计并实现“用户配置—数据转换—约束预处理—算法执行—结果解析—甘特图展示”链路；以标准化 JSON/CSV 协议将 Java 启发式算法接入 FastAPI 服务。
-  \item 完成前后端联调与 Linux/Nginx 部署，形成可访问的\href{https://astroscheduler.cn/}{演示系统}和\href{https://gitee.com/husterzj/spacetaskscheduler}{开源仓库}，支持任务与资源双视角结果展示。
+  \item 参与 AI 招聘与人才认证平台前后端研发，完成三个既定迭代任务的主要开发、手动测试与缺陷复测；梳理企业端题库需求及任务依赖，分析数据库结构与业务数据链路。
+  \item 排查人才搜索中的向量模型、维度、数据覆盖与评分日志问题，完成 Embedding 服务切换及维度适配；修复生产环境接口文档公网暴露问题。
+  \item 调研 Mercor、Juicebox、dinq 等招聘产品及数据服务，比较功能、技术路线与接入成本，验证 API/MCP 能力，为“认证+简历”等产品方向与技术选型提供参考。
+  \item 参与基于飞书与 Obsidian 的 AI 协作方案，搭建项目知识库并参与四类 Agent 初步配置；结合 BMad V4 至 V6 迁移，整理研发规范与新人指南，协作效果仍在探索。
 \end{itemize}
 
+\section{\faCode\ 项目经历}
+\datedsubsection{航天器任务调度原型系统｜系统建模与全栈开发}{2024.05 -- 2025.10}
+\tech{Python · FastAPI · Vue3 · TypeScript · Pinia · Java · Linux/Nginx}
+\begin{itemize}
+  \item 参与航天任务规划需求梳理，将任务请求、资源可用性和约束转化为数据对象与操作流程，开发规划包、主视图、报告与日志模块，支持配置导入、编辑、保存和运行。
+  \item 实现“用户配置—数据转换—约束预处理—算法执行—结果解析”链路，以 JSON/CSV 协议将已有 Java 启发式算法接入 FastAPI，完成任务与资源双视角甘特图展示。
+  \item 完成前后端联调、测试用例与操作文档整理及 Linux/Nginx 部署，提供\href{https://astroscheduler.cn/}{原型演示}和\href{https://gitee.com/husterzj/spacetaskscheduler}{开源仓库}。
+\end{itemize}
 \datedsubsection{智慧校园一体化服务学工平台｜中国软件杯队长}{2023.08}
-\tech{金蝶云苍穹 · 低代码 · 产品方案 · 数据分析}
+\tech{金蝶云苍穹 · 低代码 · 多角色业务流程 · OCR}
 \begin{itemize}
-  \item 面向学生、教师、辅导员等角色梳理学工痛点，参与设计 PC 与移动端一体化方案，覆盖迎新、宿舍、资助、奖惩和学习管理等模块。
-  \item 参与页面建模、业务流、权限、插件与轻分析方案设计，引入 OCR 迎新登记和对话机器人；负责队内推进，并协调五支参赛队伍的培训与答疑，获全国决赛三等奖。
+  \item 面向学生、教师及辅导员，参与 PC/移动端方案、页面建模、业务流与权限设计，覆盖迎新、宿舍、资助等业务，设计 OCR 登记与对话机器人方案。
+  \item 作为四人参赛队队长推进分工、材料与产品演示，团队获中国软件杯全国决赛三等奖；项目为竞赛原型。
 \end{itemize}
 
-\section{\faTrophy 荣誉及证书}
-中国软件杯全国决赛三等奖；蓝桥杯 Python 湖北赛区三等奖；西门子杯华中赛区三等奖；优秀毕业生；CET-6（496）；全国计算机等级考试三级网络技术
+\section{\faUsers\ AI 教学与协作实践}
+\datedsubsection{华中科技大学管理学院 MBA｜《AI 赋能管理创新》课程助教}{2025.03 -- 2026.07}
+\begin{itemize}
+  \item 与另一名助教共同支持五个 MBA 班、160 余名学员，参与大纲与实操路线设计，围绕生成式 AI、RAG、OpenClaw 及智能体提供演示、环境配置支持和答疑。
+  \item 完成 159 篇作业批阅，整理三册匿名化报告集及索引，支持学员探索 AI 在管理任务和自动化流程中的应用。
+\end{itemize}
+
+\section{\faFlask\ 科研经历}
+第一作者：《基于 MBSE 的航天任务调度工具系统模型构建》（已投稿《载人航天》）。
+
+第一发明人：《一种 SysML v2 模型驱动的软件开发全流程自动生成方法及系统》（2026.08 已完成专利交底并立案）。
+
+\section{\faTrophy\ 荣誉及证书}
+2023 年蓝桥杯 Python 大学 A 组湖北赛区三等奖；2022 年西门子杯初赛华中一赛区三等奖（团队）；2024 年华中科技大学优秀毕业生；CET-6（496）；全国计算机三级网络技术；MBSE 理论、实践与软件培训（2025.11）。
 
 \end{document}
