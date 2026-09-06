@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="张建｜AI 全栈开发｜华中科技大学智能科学与技术硕士在读，预计 2027 年毕业。AI 应用研发、航天任务调度系统与 AI 教学实践。">
     <title>张建的个人简历</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="responsive.css">
@@ -16,19 +17,15 @@
         <div class="contact-info">
             <p><a href="mailto:m202473806@hust.edu.cn">m202473806@hust.edu.cn</a></p>
             <p>15237776378</p>
-            <p><a href="https://husterzj.info/" target="_blank">husterzj.info</a></p>
-            <p><a href="https://gitee.com/husterzj/spacetaskscheduler" target="_blank">Gitee 项目仓库</a></p>
+            <p><a href="https://husterzj.info/" target="_blank" rel="noopener noreferrer">husterzj.info</a></p>
+            <p><a href="https://gitee.com/husterzj/spacetaskscheduler" target="_blank" rel="noopener noreferrer">Gitee 项目仓库</a></p>
         </div>
         <button onclick="window.location.href='latex/张建-AI全栈开发.pdf'" class="download-btn">下载简历</button>
     </header>
 
-    <section id="skills">
-        <h2>专业技能</h2>
-        <ul>
-            <li><strong>产品与交付：</strong>具备需求调研、竞品分析、业务建模、流程图与产品文档整理经验，参与功能测试、问题排查与方案复盘，能够从业务问题推进至系统实现和部署。</li>
-            <li><strong>全栈开发：</strong>熟悉 Python、FastAPI、Vue3、TypeScript、Pinia、MySQL/Supabase；具备 RESTful 接口、结构化数据协议、前后端联调、Git 与 Linux/Nginx 部署经验。</li>
-            <li><strong>AI 应用：</strong>了解 LLM Agent、Tool Use、MCP、Embedding 与向量检索；日常使用 Claude Code、Codex 等 AI 编码工具，具备低代码平台及 AI 工具链实践经验。</li>
-        </ul>
+    <section id="summary">
+        <h2>个人简介</h2>
+        <p>华中科技大学智能科学与技术硕士在读，预计 2027 年毕业。具备 AI 应用研发与业务系统开发实践，参与 AI 招聘与人才认证平台研发，以及航天任务调度系统的需求建模、前后端开发、算法接入和部署；具有面向非技术用户的 AI 教学与使用支持经验。</p>
     </section>
 
     <section id="education">
@@ -36,57 +33,111 @@
         <div class="education-item">
             <h3>华中科技大学｜智能科学与技术｜学术型硕士</h3>
             <p class="date">2024.09 -- 2027.06（预计）</p>
-            <p>人工智能与自动化学院；2024--2025 学年一等硕士学业奖学金</p>
+            <p>人工智能与自动化学院；2024--2025 学年一等硕士学业奖学金。研究方向涉及航天任务规划与调度、系统建模及模型驱动开发。</p>
         </div>
         <div class="education-item">
             <h3>华中科技大学｜自动化｜工学学士</h3>
             <p class="date">2019.09 -- 2024.06</p>
-            <p>本科加权成绩 88.1，GPA 3.83；2022 年排名 16/187；推免攻读硕士研究生</p>
+            <p>本科加权成绩 88.1，GPA 3.83；专业排名 16/187（截至 2022.04）；推免攻读硕士研究生。</p>
         </div>
     </section>
 
     <section id="internship">
         <h2>实习经历</h2>
         <div class="experience-item">
-            <h3>武汉归心科技有限公司｜全栈开发工程师</h3>
+            <h3>武汉归心科技有限公司｜全栈开发工程师（实习）</h3>
             <p class="date">2026.06 -- 至今</p>
-            <p style="font-size: 1.1em; margin: 8px 0;">FastAPI · Supabase · Embedding · 向量检索 · AI 工具链</p>
-            <ul>
-                <li>参与 AI 招聘与人才认证平台研发，梳理业务模块及 Epic/Story 依赖，推进 Story 2.1--2.3 的主要开发、手动测试、缺陷复测与结果同步。</li>
-                <li>排查企业端人才搜索异常，围绕 embedding 模型、向量维度、pgvector、数据覆盖率与评分日志定位问题，完成 embedding 服务切换及维度匹配调整。</li>
-                <li>通过 Supabase REST API 分析表结构与业务数据链路，形成数据库结构及修改建议；完成 BMad V4 至 V6 迁移相关文档重构和新人开发指南。</li>
-                <li>调研 Mercor、Juicebox、dinq 等 AI 招聘产品的功能、技术路线和商业模式，并参与“认证+简历”等产品方向讨论；修复生产环境 FastAPI 文档公网暴露问题。</li>
-            </ul>
+            <p style="font-size: 1.1em; margin: 8px 0;">Next.js · TypeScript · FastAPI · Supabase/PostgreSQL · pgvector</p>
+        <ul>
+            <li><strong>平台研发与联调：</strong>参与 AI 招聘与人才认证平台的前后端研发，完成三个既定迭代任务的主要开发、手动测试与缺陷复测；梳理企业端题库的需求范围和任务依赖，分析数据库结构与业务数据链路，形成修改建议。</li>
+            <li><strong>检索排障与运行配置：</strong>针对企业端人才搜索异常，检查 Embedding 模型、向量维度、pgvector 查询、数据覆盖与评分日志，完成向量服务切换及维度适配；修复生产环境接口文档的公网暴露问题。</li>
+            <li><strong>需求研究与技术验证：</strong>调研 Mercor、Juicebox、dinq 等招聘产品及数据服务，比较功能、数据能力、技术路线和接入成本，验证外部 API/MCP 能力，为“认证+简历”等产品方向与技术选型提供参考。</li>
+            <li><strong>研发协作与知识沉淀：</strong>围绕新人环境配置、知识分散与带教依赖，参与设计基于飞书和 Obsidian 的 AI 协作方案，搭建项目知识库并参与四类 Agent 的初步配置；结合 BMad V4 至 V6 迁移，整理研发规范和新人开发指南。</li>
+        </ul>
+            <p>AI 协作工作目前处于方案与初步配置阶段，围绕角色、上下文、技能、工具、权限和协作规则组织可复用配置，探索个人实践反馈与团队知识更新机制。</p>
         </div>
     </section>
 
     <section id="experience">
         <h2>项目经历</h2>
         <div class="experience-item">
-            <h3>航天器任务调度原型系统｜国自然重点项目相关</h3>
+            <h3>航天器任务调度原型系统｜系统建模与全栈开发</h3>
             <p class="date">2024.05 -- 2025.10</p>
-            <p style="font-size: 1.1em; margin: 8px 0;">Python · FastAPI · Vue3 · TypeScript · Pinia · Java · Nginx</p>
-            <ul>
-                <li>参与真实航天任务规划场景的需求梳理与业务建模，将资源、任务、约束、算法配置和结果整理为可配置的 Web 原型系统，开发规划包、主视图、报告与日志等模块。</li>
-                <li>设计并实现“用户配置—数据转换—约束预处理—算法执行—结果解析—甘特图展示”链路；以标准化 JSON/CSV 协议将 Java 启发式算法接入 FastAPI 服务。</li>
-                <li>完成前后端联调与 Linux/Nginx 部署，形成可访问的<a href="https://astroscheduler.cn/" target="_blank">演示系统</a>和<a href="https://gitee.com/husterzj/spacetaskscheduler" target="_blank">开源仓库</a>，支持任务与资源双视角结果展示。</li>
-            </ul>
+            <p style="font-size: 1.1em; margin: 8px 0;">Python · FastAPI · Vue3 · TypeScript · Pinia · Java · Linux/Nginx</p>
+        <ul>
+            <li><strong>业务建模：</strong>参与航天任务规划场景的需求梳理，将任务请求、资源可用性、约束条件与算法配置转化为系统数据对象和操作流程，开发规划包、主视图、报告与日志等模块。</li>
+            <li><strong>开发与算法集成：</strong>实现“用户配置—数据转换—约束预处理—算法执行—结果解析”的处理链路，使用 JSON/CSV 协议将已有 Java 启发式算法接入 FastAPI 服务，处理参数传递与执行结果。</li>
+            <li><strong>结果展示与验证：</strong>实现任务与资源双视角甘特图，完成前后端联调、测试用例与操作文档整理，以及 Linux/Nginx 部署，提供原型演示与代码仓库。</li>
+        </ul>
+            <p>前端围绕配置导入、编辑、保存、运行和结果查看组织操作；将业务配置与算法输入衔接，支持对调度结果进行检查与展示。</p>
+            <p><a href="https://astroscheduler.cn/" target="_blank" rel="noopener noreferrer">演示系统</a> · <a href="https://gitee.com/husterzj/spacetaskscheduler" target="_blank" rel="noopener noreferrer">开源仓库</a></p>
         </div>
-
         <div class="experience-item">
             <h3>智慧校园一体化服务学工平台｜中国软件杯队长</h3>
             <p class="date">2023.08</p>
-            <p style="font-size: 1.1em; margin: 8px 0;">金蝶云苍穹 · 低代码 · 产品方案 · 数据分析</p>
-            <ul>
-                <li>面向学生、教师、辅导员等角色梳理学工痛点，参与设计 PC 与移动端一体化方案，覆盖迎新、宿舍、资助、奖惩和学习管理等模块。</li>
-                <li>参与页面建模、业务流、权限、插件与轻分析方案设计，引入 OCR 迎新登记和对话机器人；负责队内推进，并协调五支参赛队伍的培训与答疑，获全国决赛三等奖。</li>
-            </ul>
+            <p style="font-size: 1.1em; margin: 8px 0;">金蝶云苍穹 · 低代码 · 业务流程 · 多角色权限</p>
+        <ul>
+            <li><strong>方案与实现：</strong>面向学生、教师和辅导员梳理需求，参与 PC 与移动端一体化方案、页面建模、业务流、权限及轻分析设计，覆盖迎新、宿舍、资助、奖惩和学习管理，并设计 OCR 迎新登记与对话机器人方案。</li>
+            <li><strong>团队交付：</strong>作为四人参赛队队长推进分工、材料整理与产品演示，团队获中国软件杯全国决赛三等奖。项目为竞赛原型。</li>
+        </ul>
+        </div>
+        <div class="experience-item">
+            <h3>个人云基础设施搭建与 AI 服务验证｜个人实践</h3>
+            <p class="date">2024.10 -- 至今</p>
+            <p style="font-size: 1.1em; margin: 8px 0;">Linux · 云主机 · DNS · GitHub Pages · AI 服务 API</p>
+        <ul>
+            <li><strong>部署与运维实践：</strong>独立配置云主机、网络、安全组、公网访问及 DNS，按项目需要使用云服务器或 GitHub Pages 部署网站、简历页面与系统演示，并维护站点入口。</li>
+            <li><strong>AI 服务验证：</strong>验证大模型、OCR 与向量服务接口，参与形成扫描、字段识别、清洗、分类和结构化汇总的 OCR 可演示流程；结合账单检查资源成本，关注公网暴露与凭据管理。</li>
+        </ul>
+        </div>
+    </section>
+
+    <section id="teaching">
+        <h2>AI 教学与协作实践</h2>
+        <div class="experience-item">
+            <h3>华中科技大学管理学院 MBA｜《AI 赋能管理创新》课程助教</h3>
+            <p class="date">2025.03 -- 2026.07</p>
+        <ul>
+            <li><strong>教学与使用支持：</strong>与另一名助教共同支持五个 MBA 班、160 余名学员，参与课程大纲与实操路线设计，围绕生成式 AI、提示词、RAG 和智能体开展演示、环境配置支持及答疑。</li>
+            <li><strong>反馈与资料沉淀：</strong>完成 159 篇作业批阅，整理三册匿名化报告集及索引；结合 OpenClaw、Skill 与 Subagent 等实践，支持学员探索 AI 在管理任务和自动化流程中的应用。</li>
+        </ul>
+            <p>面向非技术背景学员，将工具使用拆为可操作的步骤，跟进安装配置与实践反馈，积累技术讲解、使用支持和学习成果整理经验。</p>
+        </div>
+        <div class="experience-item">
+            <h3>华中科技大学弄潮社｜副会长</h3>
+            <p class="date">2023.03 -- 2024.03</p>
+            <p>协调五支中国软件杯参赛队伍的金蝶云苍穹培训与答疑，支持竞赛准备和团队协作；与本人所在四人参赛队的队长职责分别承担。</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>专业技能</h2>
+        <ul>
+            <li><strong>Web 应用开发：</strong>具有 Python、TypeScript、FastAPI、Vue3、Pinia 开发实践，参与页面、接口、状态管理、数据处理与前后端联调；在实习中使用 Next.js，接触 React 生态。</li>
+            <li><strong>数据库与检索：</strong>具有 Supabase/PostgreSQL、SQL、pgvector 和 Embedding 适配实践，能够结合数据结构、日志及接口结果排查业务链路问题。</li>
+            <li><strong>AI 应用与工具集成：</strong>具备外部 API/MCP 验证、AI 编码工具使用和 Agent 知识配置实践；了解提示词、RAG 与工具调用，使用 Claude Code、Codex 等工具辅助开发与验证。</li>
+            <li><strong>部署与工程协作：</strong>具有 Git、Linux/Nginx 和云资源部署经验，参与需求拆解、功能测试、缺陷复测及技术文档整理；具备 MBSE、SysML v2 研究与培训基础。</li>
+        </ul>
+    </section>
+
+    <section id="research">
+        <h2>科研经历</h2>
+        <div class="experience-item">
+            <h3>基于 MBSE 的航天任务调度工具系统模型构建</h3>
+            <p>第一作者；已投稿《载人航天》。围绕需求、功能、系统设计与仿真验证构建系统模型，表达任务属性、资源可用性和约束关系。</p>
+        </div>
+        <div class="experience-item">
+            <h3>一种 SysML v2 模型驱动的软件开发全流程自动生成方法及系统</h3>
+            <p>第一发明人；2026.08 已完成专利交底并立案。围绕模型驱动开发，设计需求、架构、代码、测试与部署配置的生成，以及跨阶段一致性校验和增量更新机制。</p>
         </div>
     </section>
 
     <section id="honors">
         <h2>荣誉及证书</h2>
-        <p>中国软件杯全国决赛三等奖；蓝桥杯 Python 湖北赛区三等奖；西门子杯华中赛区三等奖；优秀毕业生；CET-6（496）；全国计算机等级考试三级网络技术</p>
+        <ul>
+            <li><strong>竞赛与荣誉：</strong>2023 年中国软件杯全国决赛三等奖（团队）；2023 年蓝桥杯 Python 大学 A 组湖北赛区三等奖；2022 年西门子杯初赛华中一赛区三等奖（团队）；2024 年华中科技大学优秀毕业生。</li>
+            <li><strong>语言与培训：</strong>CET-6（496）；全国计算机等级考试三级网络技术；MBSE 理论、实践与软件培训（2025.11）。</li>
+        </ul>
     </section>
 
 </body>
